@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "lib": ["es2016"]
+  },
+  "files": [
+    "./src/index.ts"
+  ]
+}
