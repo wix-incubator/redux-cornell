@@ -3,5 +3,5 @@ export interface IState {
 }
 
 export interface ISelectors {
-  [key: string]: () => any;
+  [key: string]: (state: IState) => any;
 }

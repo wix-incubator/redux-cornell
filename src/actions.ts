@@ -27,7 +27,7 @@ const addAction = (opts: IActionOpts) => {
   buildAction(action, reducerKey, actionKey);
 };
 
-export const generateActions = (initialState) => {
+export const generateActions = (initialState): { [key: string]: (value?: any) => object } => {
   const actions = {};
 
   Object.keys(initialState).forEach((reducerKey: string) => {
