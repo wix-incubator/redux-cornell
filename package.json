@@ -6,6 +6,7 @@
   "author": "Eyal Eizenberg",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "pretest": "npm run lint",
     "test": "jest",

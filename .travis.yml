@@ -1,0 +1,12 @@
+sudo: required
+dist: trusty
+language: node_js
+
+script: >
+    npm run build &&
+    npm run test
+
+notifications:
+  email:
+    recipients:
+      - eyale@wix.com
