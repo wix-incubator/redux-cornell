@@ -10,3 +10,6 @@ notifications:
   email:
     recipients:
       - eyale@wix.com
+
+after_success:
+  - npm run coveralls
