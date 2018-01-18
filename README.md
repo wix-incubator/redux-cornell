@@ -1,4 +1,4 @@
-# Redux Cornell
+# Redux Cornell [![Build Status](https://travis-ci.org/wix/redux-cornell.svg?branch=master)](https://travis-ci.org/wix/redux-cornell)
 **Dedicated to Chris Cornell R.I.P**
 
 A Redux library which lets you remove most of the boilerplate associated with writing a Redux application, yet allows you to customize it completely without loosing control.
