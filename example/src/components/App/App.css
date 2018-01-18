@@ -1,0 +1,25 @@
+.App-header {
+  background-color: #222;
+  height: 220px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 210px;
+  overflow: hidden;
+}
+
+.toggleTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 30px 0;
+}
+
+.toggleText {
+  font-size: 20px;
+  margin-right: 20px;
+}

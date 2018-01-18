@@ -1,0 +1,25 @@
+.toggleContainer {
+  height: 30px;
+  width: 60px;
+  border: 1px solid #222;
+  background-color: lightgrey;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: grey;
+  top: 2px;
+  left: 32px;
+  transition: left 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.toggle.active {
+  left: 3px;
+  background-color: limegreen;
+}

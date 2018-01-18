@@ -1,0 +1,48 @@
+.episodeContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 530px;
+  overflow: hidden;
+  height: 26px;
+  transition: height 300ms ease-in-out;
+  cursor: pointer;
+  position: relative;
+  padding-top: 5px;
+}
+
+.episodeContainer.expanded {
+  height: 51px;
+}
+
+.episodeName {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.episodeNameContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.episodeDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17.3px 10px 0 10px;
+  border-color: grey transparent transparent transparent;
+  position: absolute;
+  right: 0;
+  transition: transform 300ms ease-in-out;
+}
+
+.triangle.rotated {
+  transform: rotate(90deg);
+}

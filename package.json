@@ -5,6 +5,11 @@
   "main": "./dist/index.js",
   "author": "Eyal Eizenberg",
   "license": "MIT",
+  "homepage": "https://github.com/wix/redux-cornell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wix/redux-cornell.git"
+  },
   "scripts": {
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "build": "tsc",
