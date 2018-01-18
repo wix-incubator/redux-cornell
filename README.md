@@ -188,6 +188,8 @@ In the example directory you have a fully working example which fetches the "Str
 
 In the `episodesActions.js` file, add your OMDB token. You can generate one here: https://www.omdbapi.com/apikey.aspx
 
+You can see the app online here: https://eyaleizenberg.github.io/imdb_list/index.html
+
 ### Feedback
 Found a bug? Have a suggestion? Open an issue on Github.
 Like it? Show some love on Twitter @EyalEizenberg and @WixEng ❤️
