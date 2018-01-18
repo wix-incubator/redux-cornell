@@ -3,7 +3,7 @@ import { generateSelectors } from './selectors';
 import { generateSuperReducer } from './superReducer';
 import { ISelectors, IState } from './types';
 
-interface IConstructorOpts {
+export interface IConstructorOpts {
   initialState: IState;
 }
 

@@ -8,4 +8,8 @@ describe('Utils', () => {
   it('should cameleize an array of strings', () => {
     expect(cameleize(['episodes', 'data'])).toBe('EpisodesData');
   });
+
+  it('should return empty string if nothing passed in', () => {
+    expect(cameleize(undefined)).toBe('');
+  });
 });

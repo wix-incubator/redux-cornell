@@ -5,7 +5,8 @@
     ],
     "jsRules": {},
     "rules": {
-      "quotemark": [true, "single", "jsx-single"]
+      "quotemark": [true, "single", "jsx-single"],
+      "no-angle-bracket-type-assertion": false
     },
     "rulesDirectory": []
 }

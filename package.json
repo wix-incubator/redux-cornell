@@ -21,6 +21,8 @@
     "typescript": "^2.6.2"
   },
   "jest": {
+    "collectCoverage": true,
+    "mapCoverage": true,
     "moduleFileExtensions": [
       "ts",
       "tsx",

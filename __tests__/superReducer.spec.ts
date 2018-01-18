@@ -20,6 +20,12 @@ describe('Super Reducer', () => {
     superReducer = generateSuperReducer(initialState);
   });
 
+  it('should return the initialState if none is provided', () => {
+    expect(
+      superReducer(undefined, actions.toggleShowInfoIsVisible()).showInfo.isVisible,
+    ).toBe(true);
+  });
+
   it('should toggle the isVisible', () => {
     expect(
       superReducer(initialState, actions.toggleShowInfoIsVisible()).showInfo.isVisible,

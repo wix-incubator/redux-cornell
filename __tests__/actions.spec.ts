@@ -1,4 +1,5 @@
 import { generateActions } from '../src/actions';
+import * as consts from '../src/constants';
 
 const state = {
   episodes: {
@@ -16,9 +17,8 @@ describe('Actions', () => {
       const { toggleShowInfoIsVisible } = generateActions(state);
       expect(toggleShowInfoIsVisible()).toEqual({
         actionKey: 'isVisible',
-        actionType: 'TOGGLE_ACTION',
         reducerKey: 'showInfo',
-        type: 'REDUX_CORNELL',
+        type: consts.TOGGLE_ACTION,
         value: undefined,
       });
     });
@@ -35,9 +35,8 @@ describe('Actions', () => {
       const { concatEpisodesData } = generateActions(state);
       expect(concatEpisodesData([123])).toEqual({
         actionKey: 'data',
-        actionType: 'CONCAT_ACTION',
         reducerKey: 'episodes',
-        type: 'REDUX_CORNELL',
+        type: consts.CONCAT_ACTION,
         value: [123],
       });
     });
@@ -54,9 +53,8 @@ describe('Actions', () => {
       const { extendEpisodesExpanded } = generateActions(state);
       expect(extendEpisodesExpanded({ something: true })).toEqual({
         actionKey: 'expanded',
-        actionType: 'EXTEND_ACTION',
         reducerKey: 'episodes',
-        type: 'REDUX_CORNELL',
+        type: consts.EXTEND_ACTION,
         value: {
           something: true,
         },
@@ -75,9 +73,8 @@ describe('Actions', () => {
       const { setEpisodesExpanded } = generateActions(state);
       expect(setEpisodesExpanded({ someNewValue: 123 })).toEqual({
         actionKey: 'expanded',
-        actionType: 'SET_ACTION',
         reducerKey: 'episodes',
-        type: 'REDUX_CORNELL',
+        type: consts.SET_ACTION,
         value: {
           someNewValue: 123,
         },
@@ -88,9 +85,8 @@ describe('Actions', () => {
       const { nullifyEpisodesExpanded } = generateActions(state);
       expect(nullifyEpisodesExpanded()).toEqual({
         actionKey: 'expanded',
-        actionType: 'NULLIFY_ACTION',
         reducerKey: 'episodes',
-        type: 'REDUX_CORNELL',
+        type: consts.NULLIFY_ACTION,
         value: undefined,
       });
     });
