@@ -1,0 +1,37 @@
+.currentUserContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: space-between;
+  height: 120px;
+  max-width: 400px;
+}
+
+.resetButton {
+  height: 30px;
+  width: 140px;
+  border-radius: 15px;
+  background-color: rebeccapurple;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.resetButton:active {
+  background-color: purple;
+  -webkit-box-shadow: inset 0px -1px 9px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -1px 9px 1px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -1px 9px 1px rgba(0,0,0,0.75);
+}
+
+.currentUserInput {
+  height: 20px;
+  border-radius: 15px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 5px;
+}

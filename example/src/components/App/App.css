@@ -7,11 +7,6 @@
   justify-content: center;
 }
 
-.logo {
-  height: 210px;
-  overflow: hidden;
-}
-
 .toggleTextContainer {
   display: flex;
   align-items: center;
@@ -22,4 +17,9 @@
 .toggleText {
   font-size: 20px;
   margin-right: 20px;
+}
+
+.logoImage {
+  max-width: 90%;
+  max-height: 100%;
 }

@@ -30,7 +30,9 @@ export default class Episode extends PureComponent {
 
     return(
       <div className={classnames('episodeContainer', { expanded: isExpanded })} onClick={this.onClick}>
-        <span className="episodeName">{name}</span>
+        <div>
+          <div className="episodeName">{name}</div>
+        </div>
         <div className="episodeDetails">
           <span>{`Season ${season} - Episode ${episode}`}</span>
           <span>{this.releaseDate()}</span>

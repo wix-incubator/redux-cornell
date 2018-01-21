@@ -25,9 +25,11 @@ class App extends PureComponent {
     return (
       <div className="App">
         <header className="App-header">
-          <div className="logo">
-            <img alt="logo" src="https://avatanplus.com/files/resources/mid/58388321334b21589cc039ba.png" />
-          </div>
+          <img
+            className="logoImage"
+            alt="logo"
+            src="https://raw.githubusercontent.com/eyaleizenberg/imdb_list/master/docs/static/stranger_things_logo.png"
+          />
         </header>
         <div className="toggleTextContainer">
           <span className="toggleText">Toggle info/episodes</span>

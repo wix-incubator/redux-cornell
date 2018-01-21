@@ -10,6 +10,9 @@ const reduxCornell = new ReduxCornell({
     },
     showInfo: {
       visible: false
+    },
+    currentUser: {
+      name: null
     }
   }
 });

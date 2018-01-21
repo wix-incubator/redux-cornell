@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './ShowInfo.css';
+import CurrentUserContainer from '../../containers/currentUserContainer';
 
 export default class ShowInfo extends Component {
   shouldComponentUpdate() {
@@ -18,6 +19,7 @@ export default class ShowInfo extends Component {
               and seemingly malevolent supernatural forces converge on the town while a few
               locals begin to understand that there's more going on than meets the eye.
         </span>
+        <CurrentUserContainer />
       </div>
     );
   }

@@ -2,22 +2,27 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  width: 530px;
   overflow: hidden;
   height: 26px;
   transition: height 300ms ease-in-out;
   cursor: pointer;
   position: relative;
   padding-top: 5px;
+  max-width: 100%;
 }
 
 .episodeContainer.expanded {
-  height: 51px;
+  height: 90px;
 }
 
 .episodeName {
   font-size: 20px;
   font-weight: 300;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 30px;
 }
 
 .episodeNameContainer {
@@ -28,7 +33,7 @@
 
 .episodeDetails {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 10px;
 }
 
