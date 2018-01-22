@@ -17,11 +17,9 @@ const reduxCornell = new ReduxCornell({
   }
 });
 
-const { selectors, actions } = reduxCornell;
+const { selectors, actions, superReducer } = reduxCornell;
 export { selectors, actions };
 
-const rootReducer = combineReducers({
-  superReducer: reduxCornell.superReducer
-});
+const rootReducer = combineReducers({ superReducer });
 
 export default rootReducer;
