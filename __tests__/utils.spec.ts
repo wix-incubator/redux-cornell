@@ -9,6 +9,10 @@ describe('Utils', () => {
     expect(cameleize(['episodes', 'data'])).toBe('EpisodesData');
   });
 
+  it('should capitaleize when the second name in the array is blank', () => {
+    expect(cameleize(['episodes', ''])).toBe('Episodes');
+  });
+
   it('should return empty string if nothing passed in', () => {
     expect(cameleize(undefined)).toBe('');
   });

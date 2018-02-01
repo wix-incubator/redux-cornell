@@ -21,6 +21,8 @@ export const generateSuperReducer = (initialState) => (state = initialState, act
       const extendValue = { ...state[action.reducerKey][action.actionKey], [key]: action.value[key] };
       const extendState = { ...state[action.reducerKey], [action.actionKey]: extendValue };
       return { ...state, [action.reducerKey]: extendState };
+    case consts.OVERRIDE_ACTION:
+      return { ...state, [action.reducerKey]: action.value };
     default:
       return state;
   }

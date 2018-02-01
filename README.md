@@ -112,7 +112,7 @@ extendEpisodesExpanded
 
 These actions accept an object as a parameter and will extend the state with it.
 
-#### Set & Nullify actions
+#### Set & Nullify Actions
 In addition to the actions mentioned above, each property will also generate an action for setting and nullifying the property's value in case you need to overwrite things. They will be in the following format: `set<Reducer><Property>` and `nullify<Reducer><Property>`
 
 So in our example, you will get:
@@ -129,6 +129,19 @@ nullifyShowInfoVisible
 ```
 
 The set actions receive one parameter - the value which you want to set for that property. The nullify actions don't receive any value.
+
+#### Override Action
+As a last resort, you can always override the entire value of a reducer using the override action. The override action is generated in the following format: `override<Reducer>`.
+
+The action takes an object as the parameter.
+
+So in our example, you will get
+
+```javascript
+overrideEpisodes
+```
+
+#### How to use the actions
 
 In your app you can use the action as you would with "regular" Redux action:
 

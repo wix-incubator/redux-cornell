@@ -90,5 +90,17 @@ describe('Actions', () => {
         value: undefined,
       });
     });
+
+    it('should generate the override action', () => {
+      const { overrideEpisodes } = generateActions(state);
+      expect(overrideEpisodes({ something: 'amazing' })).toEqual({
+        actionKey: '',
+        reducerKey: 'episodes',
+        type: consts.OVERRIDE_ACTION,
+        value: {
+          something: 'amazing',
+        },
+      });
+    });
   });
 });

@@ -43,6 +43,7 @@ export const generateActions = (initialState): { [key: string]: (value?: any) =>
       addAction({ name: consts.SET, type: consts.SET_ACTION, reducerKey, actionKey, actions });
       addAction({ name: consts.NULLIFY, type: consts.NULLIFY_ACTION, reducerKey, actionKey, actions });
     });
+    addAction({ name: consts.OVERRIDE, type: consts. OVERRIDE_ACTION, reducerKey, actionKey: '', actions });
   });
 
   return actions;

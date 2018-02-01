@@ -65,9 +65,16 @@ describe('Super Reducer', () => {
     ).toEqual({ someId: true, anotherId: true });
   });
 
+  it('should override the contents of the store', () => {
+    expect(
+      superReducer(initialState, actions.overrideEpisodes({ something: 'amazing' })).episodes
+    ).toEqual({ something: 'amazing' });
+  });
+
   it('should return the original state for other actions', () => {
     expect(
       superReducer(initialState, { type: 'ANOTHER_ACTION'}),
     ).toEqual(initialState);
   });
+
 });
