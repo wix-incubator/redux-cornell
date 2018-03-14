@@ -7,32 +7,27 @@ export interface IConstructorOpts {
   initialState: IState;
 }
 
-export default class ReduxCornell {
-  public superReducer;
-  public actions;
-  public selectors: ISelectors;
-  private initialState: IState;
+const initReducer = (initialState: IState) => generateSuperReducer(initialState);
 
-  constructor(opts: IConstructorOpts) {
-    if (!opts.initialState) {
-      throw new Error('Missing initialState in opts');
-    }
-    this.initialState = opts.initialState;
+const initSelectors = (initialState: IState) => generateSelectors(initialState);
 
-    this.initReducer();
-    this.initSelectors();
-    this.initActions();
+const initActions = (initialState: IState) => generateActions(initialState);
+
+const reduxCornell = (opts: IConstructorOpts) => {
+  if (!opts.initialState) {
+    throw new Error('Missing initialState in opts');
   }
 
-  private initReducer() {
-    this.superReducer = generateSuperReducer(this.initialState);
-  }
+  const initialState: IState = opts.initialState;
+  const superReducer = initReducer(initialState);
+  const selectors: ISelectors = initSelectors(initialState);
+  const actions = initActions(initialState);
 
-  private initSelectors() {
-    this.selectors = generateSelectors(this.initialState);
-  }
+  return {
+    actions,
+    selectors,
+    superReducer,
+  };
+};
 
-  private initActions() {
-    this.actions = generateActions(this.initialState);
-  }
-}
+export default reduxCornell;

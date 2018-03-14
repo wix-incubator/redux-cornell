@@ -12,18 +12,18 @@ The library receives an initial state and generates actions, selectors and a sup
 ## Installation
 `npm install --save redux-cornell`
 
-## Initializing the reduxCornell class
-Before creating your root reducer, initialize the reduxCornell class with your initial state:
+## Initializing the reduxCornell
+Before creating your root reducer, initialize reduxCornell with your initial state:
 ```javascript
 // `src/redux/reducers/index.js`
 
-// import the ReduxCornell class
-import ReduxCornell from 'redux-cornell';
+// import ReduxCornell
+import reduxCornell from 'redux-cornell';
 import { combineReducers } from 'redux';
 
-// The class expects an object with the `initialState` key.
+// The function expects an object with the `initialState` key.
 // In this example 'episodes' and 'showInfo' will become the "reducers".
-const reduxCornell = new ReduxCornell({
+const reduxCornell = reduxCornell({
   initialState: {
     episodes: {
       loaded: false,

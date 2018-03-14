@@ -1,6 +1,6 @@
 {
   "name": "redux-cornell",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Write less, do more with Redux",
   "main": "./dist/index.js",
   "author": "Eyal Eizenberg",

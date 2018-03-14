@@ -1,4 +1,4 @@
-import ReduxCornell, { IConstructorOpts } from '../src/index';
+import reduxCornell, { IConstructorOpts } from '../src/index';
 
 const initialState = {
   initialState: {
@@ -11,27 +11,27 @@ const initialState = {
 describe('Redux Cornell', () => {
   it('should throw an error if initialState is not provided', () => {
     expect(() => {
-      const reduxCornell = new ReduxCornell(<IConstructorOpts> { initialState: null });
+      const cornell = reduxCornell(<IConstructorOpts> { initialState: null });
     }).toThrow('Missing initialState in opts');
   });
 
   describe('with state', () => {
-    let reduxCornell: ReduxCornell;
+    let cornell;
 
     beforeEach(() => {
-      reduxCornell = new ReduxCornell(initialState);
+      cornell = reduxCornell(initialState);
     });
 
     it('should have selectors', () => {
-      expect(reduxCornell.selectors.getEpisodesData).toBeDefined();
+      expect(cornell.selectors.getEpisodesData).toBeDefined();
     });
 
     it('should have actions', () => {
-      expect(reduxCornell.actions.concatEpisodesData).toBeDefined();
+      expect(cornell.actions.concatEpisodesData).toBeDefined();
     });
 
     it('should have the superReducer', () => {
-      expect(reduxCornell.superReducer).toBeDefined();
+      expect(cornell.superReducer).toBeDefined();
     });
   });
 });
