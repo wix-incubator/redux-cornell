@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import ReduxCornell from 'redux-cornell';
 
-const reduxCornell = new ReduxCornell({
+const { selectors, actions, superReducer } = reduxCornell({
   initialState: {
     episodes: {
       loaded: false,
@@ -17,7 +17,6 @@ const reduxCornell = new ReduxCornell({
   }
 });
 
-const { selectors, actions, superReducer } = reduxCornell;
 export { selectors, actions };
 
 const rootReducer = combineReducers({ superReducer });
