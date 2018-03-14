@@ -23,7 +23,7 @@ import { combineReducers } from 'redux';
 
 // The function expects an object with the `initialState` key.
 // In this example 'episodes' and 'showInfo' will become the "reducers".
-const reduxCornell = reduxCornell({
+const { selectors, actions, superReducer } = reduxCornell({
   initialState: {
     episodes: {
       loaded: false,
@@ -38,7 +38,6 @@ const reduxCornell = reduxCornell({
 
 // You will get default actions and selectors (covered below).
 // Export them so they are available across your app.
-const { selectors, actions } = reduxCornell;
 export { selectors, actions };
 
 // Add the superReducer to your rootReducer`
