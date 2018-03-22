@@ -1,9 +1,0 @@
-.showInfo {
-  display: flex;
-  flex-direction: column;
-  padding: 0 30px 40px 30px;
-}
-
-.showInfo > span {
-  margin-bottom: 20px;
-}

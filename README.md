@@ -199,7 +199,10 @@ export const fetchEpisodes = () => (dispatch) => {
 None needed! The super reducer takes care of everything for you! 😎
 
 ### Full Working Example
-In the example directory you have a fully working example which fetches the "Stranger Things" episode list from imdb. You can also toggle between the episode list or show's info and you can expand/collapse each episode to see more information. The example covers the toggle, concat, extend, set and nullify actions.
+I've create a repo and demo app with a fully working example which fetches the "Stranger Things" episode list from imdb. You can also toggle between the episode list or show's info and you can expand/collapse each episode to see more information. The example covers the toggle, concat, extend, set and nullify actions.
+
+Repo: [https://github.com/eyaleizenberg/imdb_list](https://github.com/eyaleizenberg/imdb_list)<br/>
+Demo: [https://eyaleizenberg.github.io/imdb_list/index.html](https://eyaleizenberg.github.io/imdb_list/index.html)
 
 In the `episodesActions.js` file, add your OMDB token. You can generate one here: https://www.omdbapi.com/apikey.aspx
 
@@ -209,8 +212,6 @@ cd example
 npm install
 npm start
 ```
-
-You can see the app online here: https://eyaleizenberg.github.io/imdb_list/index.html
 
 ### Feedback
 Found a bug? Have a suggestion? Open an issue on Github.
