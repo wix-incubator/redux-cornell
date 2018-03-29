@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/wix/redux-cornell/master/redux_cornell_logo.png" width="400">
+![]("https://raw.githubusercontent.com/wix/redux-cornell/master/redux_cornell_logo.png")
 
 
 # Redux Cornell [![Build Status](https://travis-ci.org/wix/redux-cornell.svg?branch=master)](https://travis-ci.org/wix/redux-cornell) [![Coverage Status](https://coveralls.io/repos/github/wix/redux-cornell/badge.svg?branch=master)](https://coveralls.io/github/wix/redux-cornell?branch=master)
