@@ -41,9 +41,7 @@ const { selectors, actions, superReducer } = reduxCornell({
 export { selectors, actions };
 
 // Add the superReducer to your rootReducer`
-const rootReducer = combineReducers({
-  superReducer: reduxCornell.superReducer
-});
+const rootReducer = combineReducers({ superReducer });
 
 // Export the rootReducer like you usually do.
 export default rootReducer;
